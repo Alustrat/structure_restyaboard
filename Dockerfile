@@ -32,6 +32,7 @@ VOLUME /usr/share/nginx/html/media
 
 # entry point
 ADD https://raw.githubusercontent.com/Alustrat/structure_restyaboard/master/docker-entrypoint.sh /
+RUN chmod +x /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["start"]
 
