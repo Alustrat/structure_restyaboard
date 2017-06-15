@@ -31,7 +31,7 @@ RUN cp -R media /tmp/ \
 VOLUME /usr/share/nginx/html/media
 
 # entry point
-COPY docker-entrypoint.sh /
+ADD https://raw.githubusercontent.com/Alustrat/structure_restyaboard/master/docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["start"]
 
